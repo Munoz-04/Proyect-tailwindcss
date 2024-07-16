@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-black text-white p-4 fixed w-full top-0 z-50">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="text-2xl font-bold text-orange-500">Logo</div>
+            </div>
+            <div class="flex-1 hidden md:flex justify-center">
+                <div class="space-x-4">
+                    <a href="#" class="text-white hover:text-orange-500">Home</a>
+                    <a href="#" class="text-white hover:text-orange-500">Videos</a>
+                    <a href="#" class="text-white hover:text-orange-500">Categories</a>
+                    <a href="#" class="text-white hover:text-orange-500">Live Cams</a>
+                    <a href="#" class="text-white hover:text-orange-500">Premium</a>
+                </div>
+            </div>
+            <div class="relative md:hidden">
+                <button class="text-white focus:outline-none" id="menu-btn">
+                    More
+                </button>
+                <div class="hidden absolute right-0 mt-2 w-48 bg-black text-white rounded-lg shadow-lg" id="menu">
+                    <div class="py-2 px-4">
+                        <a href="#" class="block px-4 py-2 hover:bg-orange-500">Home</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-orange-500">Videos</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-orange-500">Categories</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-orange-500">Live Cams</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-orange-500">Premium</a>
+                        <hr class="my-2 border-gray-600">
+                        <a href="#" class="block px-4 py-2 hover:bg-orange-500">Sign Up</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-orange-500">Login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#" class="text-white hover:text-orange-500">Sign Up</a>
+                <a href="#" class="text-white hover:text-orange-500">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mt-20 p-4">
+        <div class="desktop mt-10">
+            <div class="text-2xl font-bold text-orange-500 mb-4">Logo</div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200?text=Duck+1" alt="Duck 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold">Duck 1</h3>
+                        <p class="text-gray-600">Descripción del pato 1.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200?text=Duck+2" alt="Duck 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold">Duck 2</h3>
+                        <p class="text-gray-600">Descripción del pato 2.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200?text=Duck+3" alt="Duck 3" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold">Duck 3</h3>
+                        <p class="text-gray-600">Descripción del pato 3.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200?text=Duck+4" alt="Duck 4" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold">Duck 4</h3>
+                        <p class="text-gray-600">Descripción del pato 4.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
